@@ -6,4 +6,11 @@
 <body>
     <div align="center">
         <h1>Transfer Tokens</h1>
+        <h2>You currently own {{tokens}} tokens</h2>
+        <form action="/transfer" method="POST">
+            <input type="text" name="recipient" placeholder="Recipient Address" required>
+            <input type="number" name="amount" placeholder="Amount" required>
+            <input type="submit" value="Transfer">
+        </form>
+        <button type="button" onclick="dashboard">Refresh</button>
     </div>
